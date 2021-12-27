@@ -88,8 +88,6 @@ typings/
 # Electron-Forge
 out/
 
-#config file
-config.yml
-
 #electron
 dist/
+

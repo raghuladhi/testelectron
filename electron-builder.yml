@@ -1,0 +1,4 @@
+appId: testingapp
+publish:
+  provider: github
+  token: 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

@@ -91,3 +91,5 @@ out/
 #electron
 dist/
 
+#yml
+electron-builder.yml

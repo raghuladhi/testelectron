@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <head>
-  <title>Electron Auto Update Example</title>
+  <title>Writer Development Tools</title>
   <style>
-    body {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 20px;
-      font-family: sans-serif;
-      background-color: #eaeaea;
-      text-align: center;
-    }
     #notification {
       position: fixed;
       bottom: 20px;
@@ -23,12 +15,37 @@
     .hidden {
       display: none;
     }
+    .content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
   </style>
+  <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-  <a href="https://www.zoho.com/writer">
-    <button>click</button>
-  </a>
+  <div>
+    <img src="./img/writer-logo.png" alt="Writer-logo" width="100px" height="100px">
+  </div>
+  <h3 class="title">Writer Development Tools</h3>
+  <div class="content">
+    <a href="./html/network.html">
+      <div class="btn">Network Test</div>
+    </a>
+    <a href="">
+      <div class="btn">PDF Compare</div>
+    </a>
+    <a href="">
+      <div class="btn">Dummy 1</div>
+    </a><a href="">
+      <div class="btn">Dummy 2</div>
+    </a><a href="">
+      <div class="btn">Dummy 3</div>
+    </a><a href="">
+      <div class="btn">Dummy 4</div>
+    </a>
+  </div>
   <div id="notification" class="hidden">
     <p id="message"></p>
     <button id="close-button" onClick="closeNotification()">

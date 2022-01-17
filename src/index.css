@@ -1,6 +1,31 @@
+html{
+  overflow-y: overlay;
+}
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   margin: auto;
   max-width: 38rem;
   padding: 2rem;
+  background-color: #eaeaea;
+}
+
+.btn {
+  background-color: #1176fa; /* blue */
+  border: none;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 4px;
+  transition-duration: 0.2s;
+}
+
+.btn:hover {
+  background-color: #0e55b3; /* blue */
+}
+
+.title {
+      margin-bottom: 30px;
+      margin-top: 5px;
 }

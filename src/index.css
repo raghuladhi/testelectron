@@ -13,6 +13,7 @@ body {
   background-color: #1176fa; /* blue */
   border: none;
   color: white;
+  cursor: pointer;
   padding: 10px 20px 10px 20px;
   text-align: center;
   font-size: 16px;
@@ -28,4 +29,12 @@ body {
 .title {
       margin-bottom: 30px;
       margin-top: 5px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }

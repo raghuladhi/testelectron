@@ -1,6 +1,8 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const { autoUpdater } = require('electron-updater');
 const path = require('path')
+const remote = require('@electron/remote/main');
+remote.initialize();
 
 let mainWindow;
 
@@ -10,7 +12,8 @@ function createWindow () {
     height: 600,
     webPreferences: {
       nodeIntegration: true,
-      contextIsolation: false
+      contextIsolation: false,
+      enableRemoteModule: true
     },
   });
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
@@ -24,6 +27,7 @@ function createWindow () {
 
 app.on('ready', () => {
   createWindow();
+  remote.enable(mainWindow.webContents);
 });
 
 app.on('window-all-closed', function () {

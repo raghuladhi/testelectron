@@ -17,7 +17,7 @@ const hosts = [{
     name: "writerz",
 }, {
     ip: '172.20.5.135',
-    name: "padlocal",
+    name: "pad",
 }, {
     ip: '172.20.5.55',
     name: "writer3redis",
